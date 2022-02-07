@@ -1,0 +1,129 @@
+@import "./reset";
+@import "./variables";
+
+nav{
+    background-color: $color-primario;
+    color: $color-texto2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    .div-nav{
+        display: flex;
+    }
+
+    .icono{
+        height: 45px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-list{
+        list-style-type: none;
+
+        .list-item{
+            display: inline-block;
+            padding: 20px 10px;
+        }
+
+        li.active a{
+            text-decoration: underline;
+            font-family: $family-fuente;
+            font-weight: map-get($tamaño-fuente,regular);
+            font-size: larger;
+            font-style: italic;
+            color: $color-texto2;
+        }
+        
+    }
+    
+    .menu{
+        display: none;
+    }
+    .menu-line{
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        margin-bottom: 4px;
+    }
+
+     a{
+        color: $color-texto2;
+        text-decoration: none;
+    }
+     a:hover{
+        color: $color-texto;
+    }
+}
+
+
+
+
+@media screen and (max-width:600px){
+
+
+    .unodos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media all and (max-width: 500px) {
+
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start; 
+
+        .div-nav{
+            width: 95%;
+            margin-left: 10px;
+        }
+
+        .nav-list{
+            width: 100%;
+            flex-direction: column;
+
+            .active{
+                display: block;
+            }
+            .list-item{
+                display: block;
+                padding: 5px;
+                border-top: 1px inset white;
+            }
+        }
+
+        .menu{
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+
+    }
+}
+
+
+    @media all and (max-width: 400px) {
+        
+        .title1 h2{
+            text-align: center;
+        }
+
+        .title2 h2{
+            text-align: center;
+        }
+        .title2 h3{
+            text-align: center;
+        }
+        .texto-sugerencia{
+            text-align: center;
+        }
+    }
+}

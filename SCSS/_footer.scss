@@ -1,0 +1,122 @@
+
+$pd20: 20px;
+
+@mixin paddingTop($pd20){
+    padding-top: $pd20;
+}
+
+
+.footer {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-evenly;
+    padding: 10px;
+    padding-bottom: 25px;
+    border-top: solid 1px #BADAEA;
+    color: $color-texto2;
+    flex-wrap: wrap;    
+
+    .nav-footer {
+        @include paddingTop($pd20);
+
+        a{
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .menu-footer {
+            
+            list-style-type: none;
+
+                a{
+                    color: $color-texto2;
+                }
+                .link-footer:hover{
+                    color: #BADAEA;
+                }
+        }
+
+        .title-footer {
+            
+            padding-bottom: 20px;
+            font-size: large;
+        }
+
+    }
+
+        .contacto {
+            @include paddingTop($pd20);
+            .cont-contacto {
+                @include paddingTop($pd20);
+
+            }
+        }
+        
+        .redes {
+            @include paddingTop($pd20);
+
+            .redes-sociales {
+                @include paddingTop($pd20);
+
+                display: flex;
+                flex-direction: column;
+                
+                a{
+                    text-decoration: none;
+                }
+
+
+                .red {
+                    padding-left: 10px;
+
+                    a{
+                        color: $color-texto2;
+                    }
+                }
+            }
+        }
+        
+        .logo {
+            @include paddingTop($pd20);
+        }
+}
+
+
+@media screen and (max-width:600px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:    "nav"
+                                "banner"
+                                "recetas-buscadas"
+                                "sugerencia"
+                                "footer";
+    }
+
+    .unodos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (max-width:600px){
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+}

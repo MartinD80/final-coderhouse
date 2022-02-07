@@ -1,0 +1,195 @@
+@import "reset";
+@import "variables";
+@import "body";
+@import "nav";
+@import "footer";
+@import "videos";
+@import "tragos";
+@import "servicios";
+@import "ingredientes";
+@import "contacto";
+
+
+
+
+.container-home{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: "nav nav nav nav"
+                        "banner banner banner banner"
+                        "recetas-buscadas recetas-buscadas recetas-buscadas recetas-buscadas"
+                        "sugerencia sugerencia sugerencia sugerencia"
+                        "footer footer footer footer";
+
+                        nav{
+                            grid-area: nav;
+                        }
+
+                        .banner{
+                            grid-area: banner;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .recetas-buscadas{
+                            grid-area: recetas-buscadas;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            a{
+                                text-decoration: none;
+                            }
+
+                            .title1 {
+                                grid-area: title;
+                                padding: 55px;
+                                color: white;
+                            }
+
+                            .unodos {
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                justify-content: center;
+    
+                                .receta1 {
+                                    grid-area: receta1;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    position: relative;
+                                 
+                                    .recetas {
+                                        background-color: white;
+                                        color: rgb(27, 26, 26);
+                                        height: 200px;
+                                        width: 250px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-evenly;
+                                        align-items: center;
+                                        text-align: center;
+                                    }
+
+                                    .efecto{
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        right: 0;
+                                        height: 100%;
+                                        width: 100%;
+                                        opacity: 0;
+                                        transition: .5s ease;
+                                        background-color: rgba(0, 0, 0, 0.700);
+                                        display: flex;
+            
+                                        .ver{
+                                            color: white;
+                                            font-size: 20px;
+                                            position: absolute;
+                                            top: 50%;
+                                            left:50%;
+                                            -webkit-transform: translate(-50%, -50%);
+                                            -ms-transform: translate(-50%, -50%);
+                                            transform: translate(-50%, -50%);
+                                            text-align: center;
+                                        }
+                                       
+                                    }
+                                }
+
+                                .receta1:hover .efecto{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        .sugerencia{
+                            grid-area: sugerencia;
+                            background-color:#035AA6;    
+                            padding: 50px;
+
+                            .title2{
+                                color: white;
+                                padding-top: 20px;
+                                padding-bottom: 10px;
+    
+                                h3{
+                                    color: #BADAEA;
+                                }
+                            }
+
+                            .texto-sugerencia{
+                                font-size: larger; 
+                                margin: -25px;
+                        }
+
+                            .bondiola{
+                                float: left;
+                                shape-outside: circle(50%);
+                                border-radius: 50%;
+                                width: 225px;
+                                 height: 225px;
+                                 margin: 15px;
+                            }
+                            
+                        }
+
+                        .footer{
+                            grid-area: footer;
+                        }
+            
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:    "nav"
+                                "banner"
+                                "recetas-buscadas"
+                                "sugerencia"
+                                "footer";
+    }
+
+    .unodos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    .title1 h1{
+        text-align: center;
+    }
+    
+
+    @media all and (max-width: 400px) {
+        
+        .title1 h2{
+            text-align: center;
+        }
+
+        .title2 h2{
+            text-align: center;
+        }
+        .title2 h3{
+            text-align: center;
+        }
+        .texto-sugerencia{
+            text-align: center;
+        }
+    }
+}

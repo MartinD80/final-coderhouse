@@ -1,0 +1,29 @@
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+    .titulo1{
+        padding: 30px;
+        color: white;
+    }
+    .texto-servicio{
+        font-size: larger;
+        padding: 10px 10px 30px 10px;
+
+        .link-formulario{
+            text-decoration: none;
+            color: white;
+        }
+        .link-formulario:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+@media all and (max-width: 500px){
+    .servicios{
+        text-align: center;
+    }
+}

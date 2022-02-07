@@ -1,0 +1,99 @@
+.head-ingredientes{
+    .titulos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 40px;
+        margin-top: 50px;
+        align-items: center;
+
+        h3{
+            color: #BADAEA;
+        }
+        h1{
+            color: white;
+        }
+  
+    }
+}
+
+.orden{
+    display: flex;
+    flex-direction: column; 
+     
+    figcaption{
+        color: #BADAEA;
+        padding-top: 5px;
+        align-self: center;
+    }
+
+
+    h2{
+        padding: 40px 40px 40px 40px;
+    }
+
+     
+    .ingredientes{
+        padding: 0 40px 50px 40px;
+        letter-spacing: 0.1rem;
+        text-align: justify;
+    }
+    .preparacion{
+        padding: 0 40px 50px 40px;
+        letter-spacing: 0.1rem;
+        text-align: justify;
+    }
+
+
+    figure{
+        padding: 20px 40px 60px 40px;
+        max-width: 578px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+
+        img{
+            border-radius: 50px;
+        }
+
+    }
+}
+
+@media all and (max-width: 500px) {
+    .title1 h1{
+        text-align: center;
+    }
+    
+    .navbar{
+        flex-direction: column;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .nav-list .list-item{
+        display: block;
+        padding: 5px;
+        border-top: 1px inset white;
+    }
+    .nav-list{
+        width: 100%;
+        text-align: center;
+        padding-top: 5px;
+        display: none;
+    }
+    .div-nav{
+        width: 95%;
+        margin-left: 10px;
+    }
+    .active{
+        display: block;
+    }
+
+    .ingredientes, .preparacion{
+        font-size: 1.2rem;
+    }
+   
+}

@@ -1,0 +1,9 @@
+
+
+body{
+    font-weight: map-get($tamaño-fuente,regular);
+    font-style: normal;
+    background-color: $color-primario;
+    color: $color-texto;
+    font-family: $family-fuente;
+}

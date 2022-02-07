@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Mas Deliciosa Comida Italiana">
+    <meta name="keywords" content="Recetas, Recipes, Comida, Food, Chef, Pasta, Tragos, Italia"> 
+    <link rel="stylesheet" href="/estilos/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/imagenes/logo16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/imagenes/logo32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/imagenes/logo60x60.png" sizes="60x60">
+    <link rel="stylesheet" href="https://use.typekit.net/cba6saw.css">
+    <title>Tragos refrescantes</title>
+</head>
+<body>
+     <!-- Nav -->
+
+     <nav class="navbar">
+        <div class="div-nav"> 
+            <a href="../paginas/servicios.html">
+            <img class="icono" src="../imagenes/logo_1_80x80.png" alt="logo-empresa">
+            </a>
+        </div>
+        <ul class="nav-list" id="navi-list">
+            <li class="list-item">
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li class="list-item">
+                <a href="./videos.html">Videos</a>
+            </li>
+            <li class="list-item">
+                <a href="./tragos.html">Tragos</a>
+            </li>
+            <li class="list-item">
+                <a href="./servicios.html">Servicios</a>
+            </li>
+            <li class="list-item">
+                <a href="./contacto.html">Contacto</a>
+            </li>
+        </ul>
+        <div class="menu" id="toggle-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+    <!-- Nav -->
+    <header class="head-ingredientes">
+        <div class="titulos">
+            <h1>Johnnie Walker and Ginger</h1>
+    </header>
+    <main class="orden">
+                <figure>
+                    <img src="/imagenes/jw2.jpeg" alt="trago-whisky-ginger" width="100%" height="auto">
+                    <figcaption>Jengibre picante y Whisky</figcaption>
+                </figure>
+            <hr>
+            <h2>Ingredientes</h2>
+            <div class="ingredientes">
+            <ul>
+            <li>50 ml de Johnnie Walker</li>
+            <li>150 ml de Ginger Ale</li>
+            <li>Hielo</li>
+            <li>Trocitos de jengibre fresco</li>
+            <li>Anís estrellado, rodaja de limón o naranja</li>
+        </ul>
+        </div>
+        <hr>
+        <h2>Preparación</h2>
+        <div class="preparacion">
+            <ol>
+                <li>Llenar de hielo un vaso y verter 50 ml de Whisky.</li>
+                <li>Agregar el Ginger Ale y revolver bien la mezcla.</li>
+                <li>Echar el jengibre fresco, el anís estrellado o la radaja de limón o naranja</li>
+                <li>A disfrutar!</li>
+            </ol>
+        </div>
+
+    </main>
+
+
+ <!-- Footer -->
+ <footer class="footer">
+    <div class="nav-footer">
+        <div class="title-footer"><p>Menu</p></div>
+        <ul class="menu-footer">
+            <li><a href="../index.html" class="link-footer">Inicio</a></li>
+            <li><a href="./videos.html" class="link-footer">Videos</a></li>
+            <li><a href="./tragos.html" class="link-footer">Tragos</a></li>
+            <li><a href="./servicios.html" class="link-footer">Servicios</a></li>
+            <li><a href="./contacto.html" class="link-footer">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="contacto">
+        <div> 
+           <p>Contacto</p> 
+       </div>
+       <div class="cont-contacto">
+        <p>Tel: 03794278282</p>
+        <p>pedidos@mangiare.com</p>
+       </div>
+    </div>
+
+ <div class="redes">
+    <div class="title-footer">Social</div>
+     <div class="redes-sociales">
+        <div class="red"><a href="https://instagram.com " target="_blank" rel="noopener noreferrer" class="link-footer"><span class="fab fa-instagram"></span></a></div>
+        <div class="red"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="link-footer"><span class="fab fa-twitter"></span></a></div>
+        <div class="red"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="link-footer"><span class="fab fa-facebook"></span></a></div>
+        <div class="red"><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="link-footer"><span class="fab fa-youtube"></span></a></div>
+    </div>
+ </div>
+
+ <div class="logo">
+    <img src="../imagenes/logo_1_80x80.png" width="80" height="80" alt="logo-empresa">
+ </div>
+
+</footer>
+<!-- Fin footer -->
+</div>
+</body>
+<script> 
+const toggleButton = document.getElementById('toggle-button');
+const naviList = document.getElementById('navi-list');
+
+toggleButton.addEventListener('click', () => {
+naviList.classList.toggle('active');
+})
+</script>
+</html>

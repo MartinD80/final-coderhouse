@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Mas Deliciosa Comida Italiana">
+    <meta name="keywords" content="Recetas, Recipes, Comida, Food, Chef, Pasta, Tragos, Italia"> 
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/imagenes/logo16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/imagenes/logo32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/imagenes/logo60x60.png" sizes="60x60">
+    <link rel="stylesheet" href="https://use.typekit.net/cba6saw.css">
+    <title>Servicio de Catering</title>
+</head>
+<body>
+    
+         <!-- Nav -->
+
+         <nav class="navbar">
+            <div class="div-nav"> 
+                <a href="#">
+                <img class="icono" src="../imagenes/logo_1_80x80.png" alt="logo-empresa">
+                </a>
+            </div>
+            <ul class="nav-list" id="navi-list">
+                <li class="list-item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="list-item">
+                    <a href="./videos.html">Videos</a>
+                </li>
+                <li class="list-item">
+                    <a href="./tragos.html">Tragos</a>
+                </li>
+                <li class="list-item active">
+                    <a href="./servicios.html">Servicios</a>
+                </li>
+                <li class="list-item">
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <div class="menu" id="toggle-button">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+    
+         <!-- Fin nav -->
+
+          <!-- Banner -->
+          <header class="banner">
+            <div class="banner">
+               <img src="../imagenes/ban-servicios.png" width="100%" alt="banner-servicios">
+             </div>
+         </header>
+         <!-- Fin Banner -->
+
+         
+           <main class="servicios">
+
+            <h1 class="titulo1">De nuestra cocina a su mesa</h1>
+            <article class="texto-servicio">
+                <p>La calidad y la pasión imparable son los sellos distintivos de Mangiare y sus servicios de catering. Colaboramos con empresas y particulares, brindando servicios para cenas, comidas, coffee breaks, aperitivos y cualquier momento que reúna a sus invitados alrededor de una mesa. Somos profesionales del rubro y contamos con equipos de trabajo integrados por personal con experiencia. <br> 
+                    <br> Todos los servicios son personalizados, adaptándose a las necesidades del cliente.<br>
+                
+               <br> Comuniquese con nosotros a través de nuestro <a href="./contacto.html" class="link-formulario">formulario de contacto</a> para realizar pedidos o conocer más sobre nuestros servicios.</p> </article>
+          
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="nav-footer">
+                <div class="title-footer"><p>Menu</p></div>
+                <ul class="menu-footer">
+                    <li><a href="../index.html" class="link-footer">Inicio</a></li>
+                    <li><a href="./videos.html" class="link-footer">Videos</a></li>
+                    <li><a href="./tragos.html" class="link-footer">Tragos</a></li>
+                    <li><a href="./servicios.html" class="link-footer">Servicios</a></li>
+                    <li><a href="./contacto.html" class="link-footer">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <div class="contacto">
+                <div> 
+                   <p>Contacto</p> 
+               </div>
+               <div class="cont-contacto">
+                <p>Tel: 03794278282</p>
+                <p>pedidos@mangiare.com</p>
+               </div>
+            </div>
+    
+         <div class="redes">
+            <div class="title-footer">Social</div>
+             <div class="redes-sociales">
+                <div class="red"><a href="https://instagram.com " target="_blank" rel="noopener noreferrer" class="link-footer"><span class="fab fa-instagram"></span></a></div>
+                <div class="red"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="link-footer"><span class="fab fa-twitter"></span></a></div>
+                <div class="red"><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="link-footer"><span class="fab fa-facebook"></span></a></div>
+                <div class="red"><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="link-footer"><span class="fab fa-youtube"></span></a></div>
+            </div>
+         </div>
+        
+         <div class="logo">
+            <img src="../imagenes/logo_1_80x80.png" width="80" height="80" alt="logo-empresa">
+         </div>
+        
+        </footer>
+        <!-- Fin footer -->
+
+       </div>
+</body>
+<script> 
+    const toggleButton = document.getElementById('toggle-button');
+    const naviList = document.getElementById('navi-list');
+
+    toggleButton.addEventListener('click', () => {
+        naviList.classList.toggle('active');
+    })
+</script>
+</html>

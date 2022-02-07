@@ -1,0 +1,44 @@
+.main-videos{
+
+    .titulo{
+        text-align: center;
+        padding-top: 50px;
+        margin: 20px 0 50px 0;
+        color: white;
+    }
+
+    .album-recetas{
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 50px 50px 70px 50px;
+        margin: 30px;
+
+        .tarjeta{
+            background-color: white;
+            box-shadow: 1px 1px 80px 1px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            color: black;
+
+            .text-rec{
+                text-align: center;
+                padding: 15px;
+                padding-bottom: 20px;
+            }
+       
+        }
+
+    }
+}
+
+@media all and (max-width: 500px){
+    .tarjeta{
+        padding-right: 4px;
+        .video{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

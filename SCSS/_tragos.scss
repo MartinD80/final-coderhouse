@@ -1,0 +1,94 @@
+.contenido-tragos {
+
+    .titulos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        padding-top: 60px;
+        align-items: center;
+
+        h1 {
+            color: white;
+
+        }
+    }
+
+    .trago1{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 40px;
+        gap: 40px;
+        margin-top: 50px;
+        padding-top: 50px;
+
+        .drink-link{
+            text-decoration: none;
+            color: #BADAEA;
+        }
+
+        .p1{
+            font-family: tuppence,serif;
+            font-weight: 700;
+            font-size: 140%;
+            color: #BADAEA;
+            padding: 10px;
+            font-style: oblique;
+        }
+
+        .p1:hover{
+            color: white;
+        }
+
+        .jw1{
+            border-radius: 50px;
+        }
+    }
+    
+}
+
+
+   
+ /* RESPONSIVE VER */
+
+ 
+
+
+ @media screen and (max-width:400px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas:    "nav"
+                                "banner"
+                                "recetas-buscadas"
+                                "footer";
+    }
+
+    .titulos{
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+    .contenido-tragos{
+        .trago1{
+            padding: 0 20px 0 20px;
+        }
+    }
+
+ }
+
+
+
+ @media all and (max-width: 500px) {
+  
+
+    .trago1, .trago2, .trago3{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .p1{
+        font-size: large;
+        text-align: center;
+    }
+}
